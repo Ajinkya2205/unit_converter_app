@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/logo_name"
+       android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"/>
+
+    <Spinner
+        android:id="@+id/item_list1"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/background"
+        android:backgroundTint="@color/white"
+
+       />
+    <EditText
+        android:id="@+id/edt1"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_marginTop="150dp"
+        android:ems="12"
+        android:textColor="@color/white"
+        android:hint="From"
+        android:textColorHint="@color/white"
+        android:gravity="center"
+        android:background="@drawable/background"
+        android:layout_alignParentRight="true"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/change"
+        android:layout_below="@+id/item_list1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
+
+    <Spinner
+        android:id="@+id/item_list2"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="280dp"
+        android:background="@drawable/background"
+        android:backgroundTint="@color/white"
+
+
+        />
+    <EditText
+        android:id="@+id/edt2"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="280dp"
+        android:ems="12"
+        android:hint="To"
+       android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:gravity="center"
+        android:background="@drawable/background"
+        />
+    <Button
+        android:id="@+id/convert_btn"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/blue"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="120dp"
+        android:text="convert"/>
+
+
+</RelativeLayout>
